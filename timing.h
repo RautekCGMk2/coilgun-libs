@@ -12,10 +12,7 @@
 
 #include <stdint.h>
 
-typedef struct {
-	int64_t* constants;
-	uint8_t numConstants;
-} polynomial_constants_t;
+#include "utils.h"
 
 typedef struct {
 	uint8_t gateNum;
