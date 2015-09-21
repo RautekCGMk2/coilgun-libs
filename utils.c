@@ -7,7 +7,7 @@
 
 #include "utils.h"
 
-int64_t horners_method(int64_t x, polynomial_constants_t constants) {
+inline int64_t horners_method(int64_t x, polynomial_constants_t constants) {
 	int64_t result = 0;
 	int i;
 	for(i = constants.degree; i >= 0; i--)
