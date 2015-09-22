@@ -18,7 +18,6 @@
 
 #include <stdint.h>
 
-
 typedef struct {
 	int64_t* constants;
 	uint8_t degree;
