@@ -26,4 +26,10 @@ typedef struct {
 	gate_time_t idealTime;
 } timing_data_t;
 
+typedef struct {
+	uint8_t coilNum;
+	uint32_t timeFired;
+	uint32_t velocity;
+} fire_data_t;
+
 #endif /* TIMING_H_ */
