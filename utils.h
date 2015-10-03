@@ -18,6 +18,7 @@
 #define SYSLOG_TAG(_log_level, _msg, ...) syslog(_log_level, "[" TAG "] " _msg, ##__VA_ARGS__)
 
 #include <stdint.h>
+#include <syslog.h>
 
 typedef struct {
 	int64_t* constants;

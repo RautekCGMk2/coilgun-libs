@@ -13,7 +13,6 @@
 
 #define TAG "LCD"
 
-#include <syslog.h>
 #include <string.h>
 #include <stdlib.h>
 #include <stddef.h>

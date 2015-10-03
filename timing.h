@@ -13,6 +13,7 @@
 #include <stdint.h>
 
 #include "utils.h"
+#include "pins.h"
 
 typedef struct {
 	uint8_t gateNum;
@@ -20,14 +21,18 @@ typedef struct {
 } gate_time_t;
 
 typedef struct {
-	uint8_t coilNum;
+	uint8_t stageNum;
 	uint32_t timingOverride;
 	uint8_t gateOverride;
 	gate_time_t idealTime;
-} timing_data_t;
+} stage_timing_data_t;
 
 typedef struct {
-	uint8_t coilNum;
+	stage_timing_data_t* data;
+} shot_timing_data_t;
+
+typedef struct {
+	uint8_t stageNum;
 	uint32_t timeFired;
 	uint32_t velocity;
 } fire_data_t;

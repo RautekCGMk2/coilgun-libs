@@ -20,8 +20,10 @@
 #endif
 */
 
+#define NUM_STAGES		8
+
 //FIXME Add real numbers to these
-#define PIN_LCD_UART 1
+#define PIN_LCD_UART	 1
 
 
 #endif /* PINS_H_ */
